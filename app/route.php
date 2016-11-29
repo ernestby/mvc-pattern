@@ -13,7 +13,7 @@ class Route
 		$uri = preg_replace($pattern, $replacement, $_SERVER['REQUEST_URI']);
 
 		$routes = explode('/', $uri);
-		var_dump($routes);die;
+
 		// controller name
 		if ( !empty($routes[1]) )
 		{	
